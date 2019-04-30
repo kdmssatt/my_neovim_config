@@ -1,0 +1,14 @@
+# deoplete------------------
+    
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+hook_add = '''
+let g:deoplete#enable_at_startup   = 1
+let g:deoplete#auto_complete_delay = 0
+inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<tab>"
+'''
+on_i = 1
+
+[[plugins]]
+repo = 'uplus/deoplete-solargraph'
+on_ft = ['ruby']
